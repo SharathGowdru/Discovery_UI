@@ -103,7 +103,7 @@ a{
     justify-content: flex-start;
     /* flex-wrap: wrap; */
     height: 100%;
-    width: 22%;
+    width: 23.5%;
     overflow: hidden;
 }
 
@@ -147,8 +147,8 @@ a{
 .footer-logo{
     display: flex;
     align-items: flex-start;
-    width: 5%;
-    height: 5%;
+    width: 10%;
+    height: 10%;
 }
 .content{
     display: flex;
@@ -161,49 +161,56 @@ ul {
   }
 .content1 {
     color: white;
+    font-size: 1.2rem;
 }
 .content2 {
     color: white;
+    font-size: 1.2rem;
 }
 .content3 {
     color: white;
+    font-size: 1.2rem;
 }
 
 /* ::-webkit-scrollbar {
     width: 5px;
   } */
-
+  @media only screen and (max-device-width: 1100px){
+    .exp-box{
+        width: 30.7%;
+    }
+  }
   
   @media only screen and (max-device-width: 700px) {
-   .footer{
-        height: 500px;
+   /* .footer{
+        height: 70vh;
         flex-wrap: wrap;
     }
     .footer-content{
         line-height: 1.5;
-    }
+    } */
     .cards{
         display: flex;
         flex-wrap: wrap;
         /* overflow: hidden; */
     } 
     .exp-box{
-        width: 45%;
+        width: 47.2%;
     }
     .section{
         height: 35vh;
     }
 }
-@media only screen and (max-device-width:600px){
+/* @media only screen and (max-device-width:600px){
     .footer{
-        height: 500px;
+        height: 60vh;
         display: flex;
         flex-direction: column;
     }
     .footer-content{
         line-height: 1.5;
     }
-}
+} */
 @media screen and (max-device-width:500px) {
     
     .cards{
@@ -213,9 +220,56 @@ ul {
         /* overflow: hidden; */
     }
     .exp-box{
-        width: 45%;
+        width: 47.3%;
     }  
     .section{
         height: 30vh;
     }
 }
+@media only screen and (max-device-width: 1100px) {
+    .footer{
+         height: 40vh;
+    }
+    .footer-content{
+         line-height: 1.5;
+    }
+    
+ }
+ @media only screen and (max-device-width:700px){
+    .footer{
+         height: 80vh;
+    }
+    .footer-content {
+        display: block;
+        padding: 6%;
+        position:static;
+        justify-content: start;
+        /* height: 80vh; */
+    }
+ 
+    .footer-logo {
+        display: flex;
+        align-items: flex-start;
+        margin-left: 34px;
+        width: 10%;
+        height: 10%;
+    }       
+     
+    .content1{
+        display: block;
+        margin-top: 8%;
+        font-size: 2rem;
+    }
+     
+    .content2{
+        display: inline-block;
+        /* margin-top: 8%; */
+        width: 50%;
+        font-size: 2rem;
+    }
+    .content3{
+        display: inline-block;
+        margin-top: 10%;
+        font-size: 2rem;
+    }
+ }

@@ -149,7 +149,7 @@ body {
     align-items: flex-start;
     flex-direction: row;
     justify-content: space-evenly;
-    background-color: rgba(14, 19, 16, 0.911);
+    background-color:rgba(14, 19, 16, 0.911);
     height: 70vh;
     width: 100vw;
     overflow: hidden;
@@ -160,6 +160,7 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    /* background-color: rgba(14, 19, 16, 0.911); */
 }
 .footer-logo{
     display: flex;
@@ -200,7 +201,8 @@ ul {
   } */
   @media only screen and (max-device-width: 1000px) {
    .footer{
-        height: 500px;
+        height: 70vh;
+        background-color:rgba(14, 19, 16, 0.911);
     }
     .footer-content{
         line-height: 1.5;
@@ -209,6 +211,8 @@ ul {
         line-height: 1.5;
     }
     .footer .content2{
+        /* width: 50%; */
+        justify-content: flex-start;
         line-height: 1.5;
     }
     .footer .content3{
@@ -219,16 +223,44 @@ ul {
         flex-wrap: wrap;
     }
 }
-@media only screen and (max-device-width:500px){
+@media only screen and (max-device-width:700px){
     .footer{
-        height: 500px;
+         height: 80vh;
+    }
+    .footer-content {
+        display: block;
+        padding: 6%;
+        position:static;
+        justify-content: start;
+        /* height: 80vh; */
+    }
+ 
+    .footer-logo {
         display: flex;
-        flex-direction: column;
+        align-items: flex-start;
+        margin-left: 34px;
+        width: 10%;
+        height: 10%;
+    }       
+     
+    .content1{
+        display: block;
+        margin-top: 8%;
+        font-size: 2rem;
     }
-    .footer-content{
-        line-height: 1.5;
+     
+    .content2{
+        display: inline-block;
+        /* margin-top: 8%; */
+        width: 50%;
+        font-size: 2rem;
     }
-}
+    .content3{
+        display: inline-block;
+        margin-top: 10%;
+        font-size: 2rem;
+    }
+ }
 @media screen and (max-height: 450px) {
     .sidenav {padding-top: 15px;}
     .sidenav a {font-size: 18px;}
@@ -246,9 +278,9 @@ ul {
     .exp-box{
         width: 50%;
     }
-    .footer-content{
+    /* .footer-content{
         line-height: 1.5;
-    }
+    } */
 }
 @media only screen and (max-device-width: 500px) {
     .section2{
